@@ -74,6 +74,17 @@
         "bg_round": 6
       }
     },
+    "d4a96ac3-a126-4219-889b-003b6c8a7067": {
+      "type": "custom-grid-collection",
+      "settings": {
+        "collection_list": [
+          "bestsellery",
+          "chlapci",
+          "chlapecka-tricka-s-dlouhym-rukavem",
+          "chlapecke-bezecke-kalhoty"
+        ]
+      }
+    },
     "1551022158681": {
       "type": "index-section-small_simple_banners",
       "blocks": {
@@ -599,7 +610,7 @@
           "type": "item",
           "settings": {
             "use_main_bg_color": false,
-            "main_bg_color": "#F7F8FA",
+            "main_bg_color": "#f7f8fa",
             "responsivepoint_image": "768",
             "use_link": true,
             "link": "shopify:\/\/collections\/kids",
@@ -688,7 +699,7 @@
           "type": "item",
           "settings": {
             "use_main_bg_color": false,
-            "main_bg_color": "#F7F8FA",
+            "main_bg_color": "#f7f8fa",
             "responsivepoint_image": "768",
             "use_link": true,
             "link": "shopify:\/\/collections\/kids",
@@ -777,7 +788,7 @@
           "type": "item",
           "settings": {
             "use_main_bg_color": false,
-            "main_bg_color": "#F7F8FA",
+            "main_bg_color": "#f7f8fa",
             "responsivepoint_image": "768",
             "use_link": true,
             "link": "shopify:\/\/collections\/kids",
@@ -866,7 +877,7 @@
           "type": "item",
           "settings": {
             "use_main_bg_color": false,
-            "main_bg_color": "#F7F8FA",
+            "main_bg_color": "#f7f8fa",
             "responsivepoint_image": "768",
             "use_link": true,
             "link": "shopify:\/\/collections\/kids",
@@ -955,7 +966,7 @@
           "type": "item",
           "settings": {
             "use_main_bg_color": false,
-            "main_bg_color": "#F7F8FA",
+            "main_bg_color": "#f7f8fa",
             "responsivepoint_image": "768",
             "use_link": true,
             "link": "shopify:\/\/collections\/kids",
@@ -1044,7 +1055,7 @@
           "type": "item",
           "settings": {
             "use_main_bg_color": false,
-            "main_bg_color": "#F7F8FA",
+            "main_bg_color": "#f7f8fa",
             "responsivepoint_image": "768",
             "use_link": true,
             "link": "shopify:\/\/collections\/kids",
@@ -1133,7 +1144,7 @@
           "type": "item",
           "settings": {
             "use_main_bg_color": false,
-            "main_bg_color": "#F7F8FA",
+            "main_bg_color": "#f7f8fa",
             "responsivepoint_image": "768",
             "use_link": true,
             "link": "shopify:\/\/collections\/kids",
@@ -1222,7 +1233,7 @@
           "type": "item",
           "settings": {
             "use_main_bg_color": false,
-            "main_bg_color": "#F7F8FA",
+            "main_bg_color": "#f7f8fa",
             "responsivepoint_image": "768",
             "use_link": true,
             "link": "shopify:\/\/collections\/kids",
@@ -1424,7 +1435,7 @@
           "type": "item",
           "settings": {
             "use_main_bg_color": false,
-            "main_bg_color": "#F7F8FA",
+            "main_bg_color": "#f7f8fa",
             "responsivepoint_image": "768",
             "use_link": true,
             "link": "shopify:\/\/collections\/kids",
@@ -1513,7 +1524,7 @@
           "type": "item",
           "settings": {
             "use_main_bg_color": false,
-            "main_bg_color": "#F7F8FA",
+            "main_bg_color": "#f7f8fa",
             "responsivepoint_image": "768",
             "use_link": true,
             "link": "shopify:\/\/collections\/kids",
@@ -1784,6 +1795,7 @@
   },
   "order": [
     "1550937731918",
+    "d4a96ac3-a126-4219-889b-003b6c8a7067",
     "1551022158681",
     "1550935504651",
     "1550936640502",
