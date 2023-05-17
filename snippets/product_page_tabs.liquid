@@ -1,3 +1,141 @@
+{% style %}
+  button.size-guide-btn {
+    margin-bottom: 1rem;
+    padding: 12px;
+    background-color: transparent;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s linear;
+  }
+
+  button.size-guide-btn:hover {
+    background-color: #66676e;
+    color: #fff;
+    border: 2px solid #66676e;
+  }
+
+  button.size-guide-btn ~ .size-guide-modal,
+  button.size-guide-btn ~ .size-guide-modal-background {
+    display: none;
+  }
+
+  .size-guide-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #fff;
+    box-sizing: border-box;
+    z-index: 9999;
+  }
+
+  .size-guide-modal-header {
+    position: relative;
+    box-sizing: border-box;
+    height: 50px;
+  }
+
+  .size-guide-modal-header label {
+    box-sizing: border-box;
+    float: right;
+    line-height: 50px;
+    padding: 0 15px 0 15px;
+    cursor: pointer;
+  }
+
+  .size-guide-modal-header label:hover img {
+    opacity: 0.6;
+  }
+
+  .size-guide-modal-content {
+    padding: 1.5rem;
+    height: 100%;
+    background: linear-gradient(#ddd 1px, #fff 0), linear-gradient(#fff 1px, #fff 0);
+    background-attachment: scroll, scroll;
+  }
+
+  .size-guide-modal-content > h2 {
+    padding-bottom: 2rem !important;
+    font-family: HelveticaNow, Helvetica, sans-serif !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    line-height: 32px !important;
+  }
+
+  .size-guide-modal-content > div > p {
+    font-family: HelveticaNow, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+    color: #1a1a1a;
+  }
+
+  .size-guide-modal-content > div > p:last-child {
+    padding-bottom: 2rem !important;
+  }
+
+  .size-guide-modal-content > img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    .size-guide-modal-background {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: none;
+      z-index: 9998;
+    }
+
+    .size-guide-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      display: none;
+      width: 60vw;
+      height: 80vh;
+      background-color: #fff;
+      box-sizing: border-box;
+      z-index: 9999;
+    }
+
+    .size-guide-modal-content {
+      padding: 1.5rem 2rem;
+    }
+
+    .size-guide-modal-content > h2 {
+      padding-bottom: 1rem !important;
+      font-family: HelveticaNow, Helvetica, sans-serif !important;
+      font-size: 32px !important;
+      font-weight: bold !important;
+      line-height: 36px !important;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .size-guide-modal-content > img {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      max-height: 100%;
+    }
+  }
+{% endstyle %}
 {%- capture html_tabs -%}  
 {%- for block in section.blocks -%}
 {%- assign b_i = block.settings -%}
@@ -6,6 +144,57 @@
     <div class="tt-item{% if b_i.open_tab_by_default %} active{% endif %}">
       <div class="tt-collapse-title"{% if b_i.title == "" %} style="pointer-events: none; padding-bottom: 0px;"{% endif %}>{{ b_i.title }}</div>
       <div class="tt-collapse-content">{{ product.description }}</div>
+      <button class="size-guide-btn">
+        {{ b_i.size-guide-btn-text }}
+      </button>
+      <label for="size-guide-modal" class="size-guide-modal-background"></label>
+      <div class="size-guide-modal">
+        <div class="size-guide-modal-header">
+          <label id="size-guide-modal-close-btn">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAdVBMVEUAAABNTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU0N3NIOAAAAJnRSTlMAAQIDBAUGBwgRFRYZGiEjQ3l7hYaqtLm8vsDFx87a4uvv8fP1+bbY9ZEAAAB8SURBVBhXXY5LFoJAAMOCIP4VBRXEv5j7H9HFDOizu2TRFljedgCQHeocWHVaAWStXnKyl2oVWI+kd1XLvFV1D7Ng3qrWKYMZ+MdEhk3gbhw59KvlH0eTnf2mgiRwvQ7NW6aqNmncukKhnvo/zzlQ2PR/HgsAJkncH6XwAcr0FUY5BVeFAAAAAElFTkSuQmCC" width="16" height="16" alt="">
+          </label>
+        </div>
+        <div class="size-guide-modal-content">
+          <h2>
+            {{ b_i.size-guide-modal-heading }}
+          </h2>
+          <div>
+            {{ b_i.size-guide-modal-description }}
+          </div>
+          <h5>
+            {{ b_i.size-guide-modal-subheading }}
+          </h5>
+          {%- for collection in product.collections -%}
+            {%- if collection.metafields.custom.size_guide != blank -%}
+              <img
+                src="{{ collection.metafields.custom.size_guide | image_url }}"
+                alt="Size Guide"
+                loading="lazy"
+              >
+              {% break %}
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+      <script type="text/javascript">
+        const sizeGuideBtnEl = document.querySelector('button.size-guide-btn')
+
+        if (sizeGuideBtnEl) {
+          sizeGuideBtnEl.addEventListener('click', function(e) {
+            document.querySelector('.size-guide-modal').style.display = 'block'
+            document.querySelector('.size-guide-modal-background').style.display = 'block'
+          })
+        }
+
+        const sizeGuideModalCloseBtnEl = document.querySelector('label#size-guide-modal-close-btn')
+
+        if (sizeGuideModalCloseBtnEl ) {
+          sizeGuideModalCloseBtnEl .addEventListener('click', function(e) {
+            document.querySelector('.size-guide-modal').style.display = 'none'
+            document.querySelector('.size-guide-modal-background').style.display = 'none'
+          })
+        }
+      </script>
     </div>
   {%- when 'tab_same_html' -%}
     <div class="tt-item{% if b_i.open_tab_by_default %} active{% endif %}">

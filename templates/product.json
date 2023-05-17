@@ -7,7 +7,11 @@
           "type": "tab_desc",
           "settings": {
             "title": "DESCRIPTION",
-            "open_tab_by_default": true
+            "open_tab_by_default": true,
+            "size-guide-btn-text": "Size guide",
+            "size-guide-modal-heading": "Size guide",
+            "size-guide-modal-description": "<p>Lorem<\/p><p>Ipsum<\/p>",
+            "size-guide-modal-subheading": "Size conversions"
           }
         },
         "1517579484161": {
