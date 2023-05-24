@@ -29,7 +29,7 @@
   {{ 'jquery.min.js' | asset_url | script_tag | remove: ' type="text/javascript"' }}
 
   <!-- Header hook for plugins ================================================== -->
-  {{ content_for_header }}
+  {% include 'globo.filter.script' %}{{ content_for_header }}
   <!-- /Header hook for plugins ================================================== -->
 </head>
 <body>
@@ -55,5 +55,6 @@
   
   {%- include "include_js" -%}
   
-</body>
+{% include 'globo.filter.action' %}
+	</body>
 </html>

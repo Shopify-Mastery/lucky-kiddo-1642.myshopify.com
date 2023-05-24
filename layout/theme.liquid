@@ -2,6 +2,7 @@
 <!--[if IE 9]> <html class="ie9 no-js{% if settings.use_rtl %} rtlstyle{% endif %}" lang="{{ request.locale.iso_code }}"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html{% if settings.use_boxed %} id="tt-boxed"{% endif %} class="no-js{% if settings.use_rtl %} rtlstyle{% endif %}" lang="{{ request.locale.iso_code }}"> <!--<![endif]-->
 <head>
+ {%- render 'ecom_header' -%}
   <!-- Basic page needs ================================================== -->
   <meta charset="utf-8">
   <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
@@ -61,7 +62,7 @@
   {%- endif -%}
   
   <!-- Header hook for plugins ================================================== -->
-  {{ content_for_header }}
+  {% include 'globo.filter.script' %}{{ content_for_header }}
   <!-- /Header hook for plugins ================================================== -->
 
   {%- unless settings.show_emptyreview -%}
@@ -265,5 +266,6 @@
   
   {{ settings.some_code_field }}
   
-</body>
+{% include 'globo.filter.action' %}
+	{%- render "ecom_footer"-%}</body>
 </html>

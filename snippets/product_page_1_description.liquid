@@ -170,6 +170,7 @@
                 <span class="plus-btn"></span>
               </div>
             </div>
+            {%- comment -%}
             <div class="col-item">
               <button
                 class="btn btn-lg btn-addtocart{% if settings.ajax_addtocart %} addtocart-js{% endif %}{% if product_select_options == 'false' and product.selected_variant.available == false %} disable{% endif %}"
@@ -197,6 +198,7 @@
                 {%- endif %}
               </button>
             </div>
+            {%- endcomment -%}
           </div>
           {%- if settings.buy_in_one_click -%}
             {% if settings.terms_cond_checkbox_show %}

@@ -33,7 +33,7 @@
   {{ 'theme.css' | asset_url | stylesheet_tag }}
   {{ 'jquery.min.js' | asset_url | script_tag }}
   
-  {{ content_for_header }}
+  {% include 'globo.filter.script' %}{{ content_for_header }}
 </head>
 
 <body>
@@ -56,5 +56,6 @@
   {{ 'jquery.cookie.js' | asset_url | script_tag }}
   {{ 'vendor.min.js' | asset_url | script_tag }}
 
-</body>
+{% include 'globo.filter.action' %}
+	</body>
 </html>

@@ -449,7 +449,7 @@
     "show_collection_products_count": true,
     "show_perpage": false,
     "collectionshowgrid": true,
-    "sidebar": "leftColumn",
+    "sidebar": "hidden_disable_boxed",
     "closedtabs": "",
     "otypebtn": "Size, Material",
     "tooltips_clear_section": true,
@@ -700,17 +700,17 @@
         ],
         "settings": {
           "top_offset": "small",
-          "top_offset_normal": "tt-offset-normal_base",
+          "top_offset_normal": "nomargin_base",
           "fullwidth": false,
           "show_topfooterline": false,
           "toplinesize": 2,
           "topfooterline_offset": "70",
           "topfooterline_offset_mobile": "40",
           "line_color": "#e9e7e7",
-          "show_logoblock": true,
+          "show_logoblock": false,
           "logo_text": "Wokiee",
           "logo_max_width": "95",
-          "footer_address": "&copy; Wokiee 2021. All Rights Reserved",
+          "footer_address": "",
           "footer_col": false
         }
       },
@@ -1275,6 +1275,14 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "1762459649": {
+        "type": "shopify:\/\/apps\/facebook-pixel-&-tiktok-pixel\/blocks\/one-pixel\/fbbf7f1f-cacf-481b-802e-aa7043758c9c",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   }
 }
