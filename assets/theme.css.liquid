@@ -32034,8 +32034,8 @@ ul.tt-options-swatch li[data-availability="false"]:hover a:not(.options-color),
 ul.tt-options-swatch li[data-availability="false"].active a:not(.options-color){    
   background:{{ color_title }};
 }
-img.lazyload:not([src]):not([srcset]){visibility:hidden;}
-.tt-option-block a.lazyload:not([style]){visibility:hidden;}
+{% comment %} img.lazyload:not([src]):not([srcset]){visibility:hidden;} {% endcomment %}
+{% comment %} .tt-option-block a.lazyload:not([style]){visibility:hidden;} {% endcomment %}
 .gift_btn{
   background: none;
   border: none;
