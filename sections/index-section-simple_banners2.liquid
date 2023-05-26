@@ -69,6 +69,15 @@
   {% if item.usebgcolor %}</div>{% endif %}
 </div>
 <style>
+  .ttlayoutpromo02{{ section.id }} .tt-promo02 .tt-description {
+    padding-top: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 40%;
+    bottom: 0;
+  }
+
   .ttlayoutpromo02{{ section.id }} .tt-promo02 .tt-description:not(:empty) {
     padding-top: {{ item.image_bottompadding }}px;
   }
