@@ -87,7 +87,20 @@
     max-height: 100%;
   }
 
+  .size-guide-modal-content > img.size-guide {
+    display: none;
+  }
+
   @media screen and (min-width: 768px) {
+    .size-guide-modal-content > img.size-guide {
+      display: block;
+    }
+
+    .size-guide-modal-content > img.size-guide-mobile {
+      display: none;
+    }
+
+
     .size-guide-modal-background {
       width: 100%;
       height: 100%;
@@ -164,16 +177,53 @@
           <h5>
             {{ b_i.size-guide-modal-subheading }}
           </h5>
-          {%- for collection in product.collections -%}
-            {%- if collection.metafields.custom.size_guide != blank -%}
-              <img
-                src="{{ collection.metafields.custom.size_guide | image_url }}"
-                alt="Size Guide"
-                loading="lazy"
-              >
-              {% break %}
-            {%- endif -%}
-          {%- endfor -%}
+
+          {% liquid
+            assign product_size_guide = product.metafields.custom.size_guide
+            assign product_size_guide_mobile = product.metafields.custom.size_guide_mobile
+
+            assign designated_collection = product.metafields.custom.size_guide_collection | append: ''
+
+            if product_size_guide == blank
+              for collection in product.collections
+                if designated_collection != blank and designated_collection contains collection.id
+                  assign product_size_guide = collection.metafields.custom.size_guide 
+                  break
+                elsif designated_collection == blank and collection.metafields.custom.size_guide != blank 
+                  assign product_size_guide = collection.metafields.custom.size_guide 
+                endif
+              endfor
+            endif
+
+            if product_size_guide_mobile == blank
+              for collection in product.collections
+                if designated_collection != blank and designated_collection contains collection.id
+                  assign product_size_guide_mobile = collection.metafields.custom.size_guide_mobile
+                  break
+                elsif designated_collection == blank and collection.metafields.custom.size_guide_mobile != blank 
+                  assign product_size_guide_mobile = collection.metafields.custom.size_guide_mobile 
+                endif
+              endfor
+            endif
+          %}
+
+          {%- if product_size_guide != blank -%}
+            <img
+              src="{{ product_size_guide | image_url }}"
+              class="size-guide"
+              alt="Size Guide"
+              loading="lazy"
+            >
+          {%- endif -%}
+
+          {%- if product_size_guide_mobile != blank -%}
+            <img
+              src="{{ product_size_guide_mobile | image_url }}"
+              class="size-guide-mobile"
+              alt="Size Guide"
+              loading="lazy"
+            >
+          {%- endif -%}
         </div>
       </div>
       <script type="text/javascript">
