@@ -22,7 +22,7 @@
       {%- unless item.text2 == '' -%}<div class="tt-description">{{ item.text2 }}</div>{%- endunless -%}
     </div>
     {%- endif -%}
-    <div class="row minus20marg">
+    <div class="row minus20marg shop-by-age-slider">
       {%- if section.blocks.size > 0 -%}
       {%- for block in section.blocks -%}{%- assign b_i = block.settings -%}
       
@@ -139,6 +139,24 @@
   }
   {% endif %}
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    $( document ).ready(function() {
+      const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
+      if (viewportWidth < 768) {
+        $('.shop-by-age-slider').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        });
+      }
+    });
+  })
+</script>
 
 
 {% schema %}
