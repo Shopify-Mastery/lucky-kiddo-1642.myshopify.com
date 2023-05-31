@@ -2,4 +2,10 @@
   The contents of the collection.liquid template can be found in /snippets/collection-template.liquid
 {%- endcomment -%}
 
+{% style %}
+  div.shopify-section > div.container-indent {
+    margin-top: 32px !important;
+  }
+{% endstyle %}
+
 {% include 'collection-template' current_pagination_limit: settings.pagination_limit %}

@@ -5,10 +5,10 @@
 {% endif %}
 
 {%- unless item_sidebar contains "_disable_" -%}
-<div class="tt-btn-toggle">
-  <a href="#">{{ 'collections.toolbar.filter' | t }}</a>
-</div>
 {%- endunless -%}
+{% comment %} <div class="tt-btn-toggle"> {% endcomment %}
+{% comment %}   <a href="#">{{ 'collections.toolbar.filter' | t }}</a> {% endcomment %}
+{% comment %} </div> {% endcomment %}
 {% unless settings.toolbarsettings contains 'hidetoolbaroptions' %}
 {% capture qty %}{% if collection.all_products_count > pagination_limit_const and settings.show_perpage %}true{% else %}false{% endif %}{% endcapture %}
 {% if settings.collectionshowsort or qty == "true" %}
