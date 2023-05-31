@@ -81,6 +81,10 @@
     .tt-flbtn.disabled{
     opacity: 0.3;
     }
+
+    .slick-dots li button:before {
+      content: '' !important;
+    }
   </style>
 </head>
 <body class="page{{ template }}" {% if template contains '404' %}id="template404"{% elsif settings.use_scale_product_image %}
