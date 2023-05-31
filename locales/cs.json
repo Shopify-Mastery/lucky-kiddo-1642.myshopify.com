@@ -1,2 +1,444 @@
 {
+  "general": {
+    "404": {
+      "title": "",
+      "button": "",
+      "subtext": ""
+    },
+    "menu_icons": {
+      "new": "",
+      "sale": "PRODEJ"
+    },
+    "search": {
+      "title": "Vyhledávání",
+      "no_results_title_html": "VAŠE VYHLEDÁVÁNÍ NEVRÁTILO ŽÁDNÉ VÝSLEDKY.",
+      "no_results_html": "Výsledky hledání pro",
+      "results_title": "VÝSLEDKY HLEDÁNÍ PRO",
+      "header_message": "Co hledáte?",
+      "place_holder": "VYHLEDÁVÁNÍ PRODUKTŮ...",
+      "button_name_header_type_2": "HLEDAT",
+      "see_all_results": "Zobrazit všechny výsledky"
+    },
+    "meta": {
+      "keywords": "",
+      "author": "",
+      "tags": "",
+      "page": ""
+    },
+    "menu": {
+      "title": "",
+      "button_close": "",
+      "button_back": ""
+    },
+    "countdown": {
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": ""
+    },
+    "pagination": {
+      "next": ""
+    },
+    "general": {
+      "portfolio_zoom_in": "",
+      "to_top_button": "",
+      "subscribed_message_html": "",
+      "send_message_title": "",
+      "sended_message": ""
+    },
+    "tooltip_texts": {
+      "go_to_product": "",
+      "header_search": "Vyhledávání",
+      "header_cart": "Košík",
+      "header_account": "",
+      "header_settings": "",
+      "quick_view": "",
+      "view_review": "",
+      "filter_remove": "",
+      "wishlist": "",
+      "compare": "",
+      "currency": ""
+    },
+    "password_page": {
+      "opening_soon": ""
+    }
+  },
+  "layout": {
+    "customer": {
+      "close": "",
+      "account": "",
+      "checkout": "",
+      "sign_in": "",
+      "register": "",
+      "log_out": "",
+      "view_cart": "Zobrazit košík"
+    }
+  },
+  "collections": {
+    "general": {
+      "empty": "Prázdný",
+      "sort_result": "Výběru neodpovídají žádné produkty."
+    },
+    "sidebar": {
+      "filtres_title": "NAKUPOVÁNÍ PODLE:",
+      "back": "ZAVŘÍT",
+      "clear_all": "VYČISTIT VŠE",
+      "text_remove_parameter": "Odstranění adresy",
+      "empty_search_parameter_html": "NEZÁVISLÉ:"
+    },
+    "toolbar": {
+      "filter": "FILTR",
+      "sort_by_title": "Seřadit podle:",
+      "grid_amount_title": "Zobrazit:",
+      "items": "Položka",
+      "button_show_more": "ZOBRAZIT VÍCE",
+      "button_show_more_disabled": "ŽÁDNÉ DALŠÍ PRODUKTY",
+      "all": "VŠECHNY"
+    },
+    "sorting": {
+      "title": "Seřadit podle",
+      "featured": "Doporučené stránky",
+      "best_selling": "Nejprodávanější",
+      "az": "Jméno vzestupně",
+      "za": "Sestupné jméno",
+      "price_ascending": "Vzestupná cena",
+      "price_descending": "Cena klesající",
+      "date_ascending": "Vzestupné datum",
+      "date_descending": "Datum sestupně"
+    }
+  },
+  "products": {
+    "general": {
+      "view_all_variants": "",
+      "add_to_cart": "Do košíku",
+      "add_to_cart_html": "<span class=\"icon icon-shopping_basket\"><\/span> <span>DO KOŠÍKU<\/span>",
+      "preorder_html": "",
+      "added_html": "",
+      "error_html": "",
+      "wait_html": "",
+      "select_options_html": "",
+      "unavailable": "",
+      "unavailable_html": "",
+      "quick_view": "",
+      "sale_html": "Prodej",
+      "new": "",
+      "related_products": "",
+      "featured": "",
+      "view_review": "",
+      "buy_now_button": "",
+      "loading": ""
+    },
+    "product": {
+      "sold_out": "",
+      "many_in_stock": "",
+      "in_stock": "",
+      "purchase_when_out_of_stock": "",
+      "availability": "",
+      "sku": "",
+      "vendor": "",
+      "type": "",
+      "barcode": "",
+      "quantity": "",
+      "tags": "",
+      "include_taxes": "",
+      "shipping_policy_html": "",
+      "xr_button": "",
+      "xr_button_label": ""
+    }
+  },
+  "blogs": {
+    "general": {
+      "author_by_html": "",
+      "on": "",
+      "comment": ""
+    },
+    "article": {
+      "by_author": "",
+      "posted_in": "",
+      "read_more": "",
+      "back_to_blog": "",
+      "title_result": ""
+    },
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    },
+    "comments": {
+      "title": "",
+      "name": "",
+      "email": "",
+      "message": "",
+      "post": "",
+      "moderated": "",
+      "success_moderated": "",
+      "success": "",
+      "comments_with_count": {
+        "one": "",
+        "other": ""
+      }
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "NÁKUPNÍ KOŠÍK",
+      "continue_shopping": "POKRAČOVAT V NAKUPOVÁNÍ",
+      "clear_cart": "VYMAZAT NÁKUPNÍ KOŠÍK",
+      "update": "AKTUALIZACE KOŠÍKU",
+      "subtotal": "DÍLČÍ SOUČET",
+      "shipping_total": "DOPRAVA",
+      "total": "CELKEM",
+      "checkout": "PŘEJDĚTE K POKLADNĚ",
+      "empty": "NÁKUPNÍ KOŠÍK JE PRÁZDNÝ",
+      "empty_cart": "V nákupním košíku nemáte žádné položky.",
+      "shipping_heading": "ODHAD POŠTOVNÉHO A DANĚ",
+      "shipping_description": "",
+      "shipping_country": "",
+      "shipping_state": "",
+      "shipping_zip": "",
+      "shipping_variants": "",
+      "shipping_button": ""
+    },
+    "label": {
+      "quantity": "Množství:",
+      "total": "Celkem",
+      "note": "POZNÁMKA",
+      "note_text": "Přidejte speciální pokyny k objednávce..."
+    },
+    "header": {
+      "title": "NÁKUPNÍ KOŠÍK",
+      "close": "ZAVŘÍT",
+      "total": "CELKEM:",
+      "checkout": "PŘEJDĚTE K POKLADNĚ",
+      "view_cart": "ZOBRAZIT KOŠÍK",
+      "view_cart_all": "...",
+      "button_delete": "Odstranit",
+      "empty_cart": "Žádné produkty v košíku",
+      "view_product": "Zobrazit produkt"
+    },
+    "popup_product_added": {
+      "view_cart": "ZOBRAZIT KOŠÍK",
+      "continue_shopping": "POKRAČOVAT V NAKUPOVÁNÍ",
+      "go_to_checkout": "PŘEJDĚTE K POKLADNĚ",
+      "message_main": "Úspěšně přidáno do košíku!",
+      "message_mobile": "Úspěšně přidáno do košíku!",
+      "item_quantity": "MNOŽSTVÍ:",
+      "item_price": "CELKEM:",
+      "quantity_html": "V košíku jsou {{ not_delete_variable }} položky.",
+      "total_price": "CELKEM:",
+      "related_products_title": "K tomuto produktu si také kupte:"
+    },
+    "shipping": {
+      "there_are": "",
+      "shipping_rates": "",
+      "starting_at": "",
+      "one_shipping_rate": "",
+      "do_not_ship": ""
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "message": "",
+      "send": "",
+      "post_success": "",
+      "post_error": "",
+      "post_field_error_html": ""
+    },
+    "placeholder": {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "message": ""
+    }
+  },
+  "customer": {
+    "general": {
+      "or": "",
+      "return": "",
+      "link_back": "",
+      "required_fields": ""
+    },
+    "account": {
+      "title_main": "",
+      "title": "",
+      "order_history": "",
+      "account_details": "",
+      "view_addresses": "",
+      "name": "",
+      "email": "",
+      "address": "",
+      "address_2": "",
+      "country": "",
+      "zip": "",
+      "phone": "",
+      "company": ""
+    },
+    "activate_account": {
+      "title_main": "",
+      "title_form": "",
+      "subtext": "",
+      "password": "",
+      "password_confirm": "",
+      "submit": ""
+    },
+    "addresses": {
+      "title": "",
+      "default": "",
+      "add_new": "",
+      "first_name": "",
+      "last_name": "",
+      "company": "",
+      "address1": "",
+      "address2": "",
+      "city": "",
+      "country": "",
+      "province": "",
+      "zip": "",
+      "phone": "",
+      "set_default": "",
+      "add": "",
+      "update": "",
+      "cancel": "",
+      "edit": "",
+      "delete": ""
+    },
+    "login": {
+      "title": "",
+      "title_login": "",
+      "description": "",
+      "email": "",
+      "password": "",
+      "email_field": "",
+      "password_field": "",
+      "forgot_password": "",
+      "reset_password": "",
+      "reset_password_subtext": "",
+      "sign_in": "",
+      "cancel": "",
+      "submit_recover": "",
+      "new_customer_continue": "",
+      "new_customer": "",
+      "new_customer_description": ""
+    },
+    "orders": {
+      "order_number": "",
+      "date": "",
+      "payment_status": "",
+      "fulfillment_status": "",
+      "total": "",
+      "none": ""
+    },
+    "order": {
+      "title": "",
+      "cancelled": "",
+      "cancelled_reason": "",
+      "billing_address": "",
+      "payment_status": "",
+      "shipping_address": "",
+      "fulfillment_status": "",
+      "product": "",
+      "sku": "",
+      "price": "",
+      "quantity": "",
+      "total": "",
+      "subtotal": "",
+      "fulfilled": ""
+    },
+    "reset_password": {
+      "title_main": "",
+      "password": "",
+      "password_confirm": "",
+      "submit": ""
+    },
+    "register": {
+      "title_main": "",
+      "title_form": "",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "password": "",
+      "first_name_form": "",
+      "last_name_form": "",
+      "email_form": "",
+      "password_form": "",
+      "submit": "",
+      "cancel": ""
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title_html": "",
+      "subtext": "",
+      "disabled": "",
+      "expired": "",
+      "active": "",
+      "redeem_html": "",
+      "shop_link": "",
+      "print": "",
+      "remaining_html": "",
+      "add_to_apple_wallet": ""
+    }
+  },
+  "popup_quick_view": {
+    "general": {
+      "sku": "",
+      "barcode": "",
+      "availability": "",
+      "in_stock": "",
+      "sold_out": "",
+      "many_in_stock": "",
+      "purchase_when_out_of_stock": "",
+      "view_full_info": ""
+    }
+  },
+  "wishlist": {
+    "header": {
+      "wishlist": ""
+    },
+    "buttons_text": {
+      "tooltip_add": "",
+      "tooltip_remove": "",
+      "tooltip_login": "",
+      "tooltop_load_text": "",
+      "page_text_add": "",
+      "page_text_remove": ""
+    },
+    "modal_alert": {
+      "message": "",
+      "sign_in_button": "",
+      "register_button": ""
+    },
+    "wishlist_page": {
+      "title": "",
+      "login_message": "",
+      "sign_in_button": "",
+      "register_button": "",
+      "empty_wishlist": "",
+      "continue_shopping": ""
+    }
+  },
+  "compare": {
+    "header": {
+      "compare": ""
+    },
+    "buttons_text": {
+      "tooltip_add": "",
+      "tooltip_remove": "",
+      "page_text_add": "",
+      "page_text_remove": ""
+    },
+    "compare_page": {
+      "title": "",
+      "empty_title": "",
+      "empty_compare": "",
+      "continue_shopping": "",
+      "in_stock": "",
+      "soldout": "",
+      "field_description": "",
+      "field_vendor": ""
+    }
+  }
 }

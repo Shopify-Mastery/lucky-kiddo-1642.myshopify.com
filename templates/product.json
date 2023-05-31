@@ -6,12 +6,12 @@
         "1513760820453": {
           "type": "tab_desc",
           "settings": {
-            "title": "DESCRIPTION",
+            "title": "POPIS",
             "open_tab_by_default": true,
-            "size-guide-btn-text": "Size guide",
-            "size-guide-modal-heading": "Size guide",
-            "size-guide-modal-description": "<p>With our handy size conversion guide, you can quickly find out which size fits you in different countries. The size guide is for informational purposes only, as sizes and measurements may vary from brand to brand.<\/p>",
-            "size-guide-modal-subheading": "Size conversions"
+            "size-guide-btn-text": "Průvodce velikostí",
+            "size-guide-modal-heading": "Průvodce velikostí",
+            "size-guide-modal-description": "<p>Průvodce velikostí má pouze informativní charakter, protože velikosti a rozměry se mohou u jednotlivých značek lišit.<\/p>",
+            "size-guide-modal-subheading": ""
           }
         },
         "1517579484161": {
@@ -24,6 +24,7 @@
         },
         "1513761234395": {
           "type": "tab_same_html",
+          "disabled": true,
           "settings": {
             "title": "ADDITIONAL INFORMATION",
             "html": "<table class=\"tt-table-03\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>Color:<\/td>\n\t\t\t<td>Blue, Purple, White<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>Size:<\/td>\n\t\t\t<td>20, 24<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>Material:<\/td>\n\t\t\t<td>100% Polyester<\/td>\n\t\t<\/tr>\n\t<\/tbody>\n<\/table>",
@@ -32,6 +33,7 @@
         },
         "1513761237522": {
           "type": "tab_review",
+          "disabled": true,
           "settings": {
             "title": "REVIEWS",
             "open_tab_by_default": false
@@ -42,7 +44,7 @@
           "settings": {
             "fullscreen": false,
             "titleincenter": false,
-            "title": "RELATED PRODUCTS",
+            "title": "SOUVISEJÍCÍ PRODUKTY",
             "product_upsell_collection_count": "8",
             "slickdesktoptoshow": "4"
           }
@@ -83,12 +85,12 @@
         "designoption2": "getSelectButtonHtml",
         "designoption3": "getSelectButtonHtml",
         "show_product_info": true,
-        "show_product_vendor": true,
-        "show_product_type": true,
-        "show_product_barcode": true,
-        "show_product_tags": true,
+        "show_product_vendor": false,
+        "show_product_type": false,
+        "show_product_barcode": false,
+        "show_product_tags": false,
         "product_tab_tags": "Vintage, Awesome, Summer, Beachwear, Sunglasses, Winter, Shorts, Cool, Nice",
-        "product_item_show_wishlist": true,
+        "product_item_show_wishlist": false,
         "product_item_show_compare": false,
         "show_sizechart": false,
         "btnname": "<span class=\"icon-f-09\"><\/span> <b>Size guide<\/b>",
