@@ -185,7 +185,7 @@
             assign designated_collection = product.metafields.custom.size_guide_collection | append: ''
 
             if product_size_guide == blank
-              for collection in product.collections
+              for collection in product.collections reversed
                 if designated_collection != blank and designated_collection contains collection.id
                   assign product_size_guide = collection.metafields.custom.size_guide 
                   break
@@ -196,7 +196,7 @@
             endif
 
             if product_size_guide_mobile == blank
-              for collection in product.collections
+              for collection in product.collections reversed
                 if designated_collection != blank and designated_collection contains collection.id
                   assign product_size_guide_mobile = collection.metafields.custom.size_guide_mobile
                   break
