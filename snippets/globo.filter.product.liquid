@@ -68,6 +68,7 @@
         </a>
         </div>
         <div class="spf-product__info  hover">
+                {% if product.vendor %}<div class="spf-product-card__vendor"><a href="/collections/vendors?q={{product.vendor | url_encode}}">{{product.vendor}}</a></div>{% endif %}
                 <div class="h4 spf-product-card__title">
             <a translatable href="{{root_url}}{{ product.url | within: collection }}{{variant_url}}">{{product.title}}</a>
                     </div>

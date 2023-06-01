@@ -442,7 +442,7 @@
     "products_in_one_row": false,
     "use_one_row_in_theme": true,
     "products_in_column": "4",
-    "enable_infinite_scroll": "autoscroll",
+    "enable_infinite_scroll": "showmore",
     "no_products": "No Products",
     "show_collection_description": true,
     "show_collection_title": true,
