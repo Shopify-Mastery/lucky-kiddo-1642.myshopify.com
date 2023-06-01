@@ -110,8 +110,8 @@
   "products": {
     "general": {
       "view_all_variants": "",
-      "add_to_cart": "Do košíku",
-      "add_to_cart_html": "<span class=\"icon icon-shopping_basket\"><\/span> <span>DO KOŠÍKU<\/span>",
+      "add_to_cart": "Add to cart",
+      "add_to_cart_html": "<span class=\"icon icon-shopping_basket\"></span> <span>Add to cart</span>",
       "preorder_html": "",
       "added_html": "",
       "error_html": "",
