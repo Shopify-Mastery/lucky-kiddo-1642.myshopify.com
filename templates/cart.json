@@ -3,13 +3,14 @@
     "main": {
       "type": "cart-template",
       "settings": {
+        "ajaxcartpage": true,
         "cart_design": "default",
-        "cart_notes_enable": true,
-        "cart_shipping_enable": true,
+        "cart_notes_enable": false,
+        "cart_shipping_enable": false,
         "shipping_calculator_default_country": "United States",
-        "show_related": true,
+        "show_related": false,
         "related_title": "YOU MAY BE INTERESTED IN THESE PRODUCTS",
-        "show_related_2": true,
+        "show_related_2": false,
         "related_title_2": "STATIC BLOCK WITH PRODUCTS",
         "collection": ""
       }

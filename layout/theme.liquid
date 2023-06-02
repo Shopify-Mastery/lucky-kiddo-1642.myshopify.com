@@ -67,7 +67,7 @@
   {%- endif -%}
   
   <!-- Header hook for plugins ================================================== -->
-  {% include 'globo.filter.script' %}{{ content_for_header }}
+  {{ content_for_header }}
   <!-- /Header hook for plugins ================================================== -->
 
   {%- unless settings.show_emptyreview -%}
@@ -275,6 +275,6 @@
   
   {{ settings.some_code_field }}
   
-{% include 'globo.filter.action' %}
+
 	{%- render "ecom_footer"-%}</body>
 </html>
